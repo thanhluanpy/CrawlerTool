@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Gas Station Crawler Tool";
+}
+
+@section scripts{
+  
+    <script src="~/Scripts/controllers/coccocCrawler.js"></script>
+   
+}
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <label>Select Categoty</label>
+        <div>
+            <select id="category" class="btn btn-default">
+                <option value="-1">Select Category</option>
+                <option value="tram+xang">Trạm xăng</option>
+                <option value="bai+giu+xe">Bãi giữ xe</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <label>Select Place:</label>
+        <div id="select-city" class="">
+
+        </div>
+
+    </div>
+
+
+
+
+</div>
+<div class="row">
+    <div class="">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Gas Station Name</th>
+                    <th>Address</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody id="list-gas-station">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+<div style="display: none"id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR5uTIVzUqplQZyv84pkG7P6tBHfKIIzM&libraries=places"
+        async defer></script>
